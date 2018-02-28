@@ -1,0 +1,393 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 1440px;
+}
+body a{
+	text-decoration: none;
+}
+.top{
+	width: 100%;
+	height: 88px;
+}
+.taobaologo{
+	width: 113px;
+	height: 48px;
+	margin-left: 118px ;
+	padding-top: 23px;
+}
+.taobaologow{
+	width: 902px;
+	height: 30px;
+	position: absolute;
+	top: 23px;
+	left: 324px ;
+	background-color: #fef2f2;
+	border: solid 1px orange;
+}
+.taobaologow p{
+	display: inline-block;
+	width: 886px;
+	margin-left: 8px;
+	font-size: 12px;
+}
+.taobaologol{
+	width: 130px;
+	height: 24px;
+	position: absolute;
+	top: 66px;
+	right: 118px;
+}
+.taobaologol a{
+	display: inline-block;
+	width: 130px;
+	height: 24px;
+	font-size: 12px;
+	color: burlywood;
+}
+.taobaologol a img{
+	line-height: 24px;
+	vertical-align: middle;
+	
+}
+.center{
+	width: 1440px;
+	height: 600px;
+	background-color: #830978;
+	position: absolute;
+	top: 90px;
+}
+.denglujiemian{
+	width: 352px;
+	height: 350px;
+	position: absolute;
+	right: 180px;
+	top: 120px;
+	background-color: #f3e7f2;
+	display: none;
+}
+.denglujiemian2{
+	width: 352px;
+	height: 350px;
+	position: absolute;
+	right: 180px;
+	top: 120px;
+	background-color: #f3e7f2;
+	display: block;
+}
+.box1{
+	width: 140px;
+	height: 28px;
+	background-color: #fefcee;
+	font-size: 12px;
+	line-height: 28px;
+	margin-left: 150px;
+	position: relative;
+}
+.box1::after{
+	content: "";
+	width:0px;
+	height: 0px;
+	border: solid 8px transparent;
+	border-left-color: white;
+	position: absolute;
+	top: 6px;	
+	left: 139px;
+	}
+.box1::before{
+	content: "";
+	width:0px;
+	height: 0px;
+	border: solid 8px transparent;
+	border-left-color: #fefcee;
+	position: absolute;
+	top: 6px;
+	left: 140px;
+}
+.box1 img{
+	vertical-align:middle ;
+}
+#box2{
+	width: 49px;
+	height: 45px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+/*	background-image: url(../img/shenselogo.png);*/
+	cursor: pointer;
+}
+#box3{
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+/*	background-image: url(../img/shenselogo.png);*/
+	cursor: pointer;
+}
+#box3::after{
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: solid 52px transparent;
+	border-left-color: #f3e7f2;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#box3::before{
+	content: "";
+	width:0px;
+	height: 0px;
+	border: solid 8px transparent;
+	border-left-color: #f3e7f2;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.biaozhunkuang{
+	width: 300px;
+	height: 294px;
+	margin: 34px auto;
+	margin-top: 6px;
+}
+.p1{
+	margin-bottom: 28px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.kuang1,.kuang2,.p2{
+	width: 300px;
+	height: 40px;
+	margin-bottom: 20px;
+}
+.kuang1 input{
+	position: absolute;
+	top: 83px;
+	width: 256px;
+	height: 40px;
+	font-size: 14px;
+	background: url(../img/denglujiemian1.jpg) no-repeat left;
+	padding-left: 40px;
+	border: solid 2px #999;
+	border-radius: 5px;
+}
+.kuang2 input{
+	position: absolute;
+	top: 143px;
+	width: 256px;
+	height: 40px;
+	background: url(../img/denglujiemian1.jpg) no-repeat left;
+	padding-left: 40px;
+	border: solid 2px #999;
+	border-radius: 5px;
+}
+.b1{
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #ff4400;
+	margin-bottom: 20px;
+	border: none;
+	cursor: pointer;
+}
+.a1 a{
+	height: 16px;
+	display: inline-block;
+	margin-right: 22px;
+	font-size: 14px;
+	color: #999999;
+}
+.a1 a:hover{
+	color: orange;
+}
+.a1 a img{
+		vertical-align: middle;
+}
+.a2{
+	margin-top: 20px;
+	margin-left: 80px;
+}
+.a2 a{
+	margin-left: 16px;
+	font-size: 12px;
+	color: #999999;
+}
+.a2 a:hover{
+	color: orange;
+}
+#box4{
+	display: block;
+	width: 140px;
+	height: 140px;
+	margin-left: 80px;
+	position: absolute;
+}
+.box4img{
+	display: block;
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.box4img img{
+	position: absolute;
+	opacity: 1;
+	top: 0px;
+	left: 0px;
+}
+#oimg{
+	display: none;
+	position: absolute;
+	top: -20px;
+	left: 100px;
+	opacity: 0;
+}
+.shuaxin{
+	width: 140px;
+	height: 140px;
+	margin-left: 80px;
+	position: absolute;
+	background-image: url(../img/JSG0H6UX{$UGPO}491O%55W.png);
+	display: none;
+}
+.shuacen{
+	width: 140px;
+	height: 64px;
+	margin: 40px auto;
+}
+.shuaxin button{
+	width: 104px;
+	height: 34px;
+	background-color: red;
+}
+.box5{
+	width: 180px;
+	height: 34px;
+	margin: 0 auto;
+	margin-top: 195px; 
+	
+}
+.box5 span{
+	display: inline-block;
+	width: 145px;
+	height: 34px;
+	font-size: 13px;
+	color: #9c9c9c;
+	float: left;
+}
+.box5 img{
+	float: left;
+	margin-top: 2px;
+}
+.box5 span a{
+	display: inline-block;
+	height: 14px;
+	padding-left: 3px;
+	text-decoration: none;
+	color: #ff4400;
+	font-size: 13px;
+	line-height: 14px;
+	
+}
+.box5 span a:first-child{
+	border-right: solid 1px black;
+	padding-right: 3px;
+}
+#box6{
+	width: 112px;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 188px;
+	font-size: 12px;
+	color: #6c6c6c;
+}
+#box6 span{
+	cursor: pointer;
+}
+#box6 a{
+	margin-left: 10px;
+	color: #6c6c6c;
+}
+#box6 a:hover{
+	color: red;
+}
+.down{
+	position: absolute;
+	top:750px;
+	left: 112px;
+	width: 1200px;
+	height: 300px;
+}
+.down span{
+	font-size: 14px;
+	color: #9c9cb4;
+}
+.down a{
+	color: #6c6c6c;
+}
+.u1{	
+	display: inline-block;
+	width: 1200px;
+	height: 42px;
+	border-bottom: solid 1px #6c6c6c;
+	border-top: solid 1px #6c6c6c;
+}
+.u1 li{
+	float: left;
+	list-style: none;
+}
+#a3{
+	border-right: none;
+}
+.u1 li a{
+	display: inline-block;
+	margin: 15px  0;
+	height: 12px;
+	border-right: 1px solid #6c6c6c;
+	padding: 0 8px;
+	line-height: 12px;
+	font-size: 14px;
+}
+.u2{	
+	display: inline-block;
+	width: 1200px;
+	height: 42px;
+}
+.u2 li{
+	float: left;
+	list-style: none;
+}
+
+.u2 li a{
+	display: inline-block;
+	margin-right: 10px;
+	line-height: 12px;
+	font-size: 12px;
+}
+.u2 span{
+	display: inline-block;
+	margin-left: 20px;
+}
+.last a{
+	font-size: 12px;
+	color: ;
+}
+.last span{
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	padding: 0 8px ;
+	border-left: solid 1px #6c6c6c;
+}
+.last span:first-child{
+	border:none;
+	padding: 0;
+}
+.down a:hover{
+	color: orange;
+}

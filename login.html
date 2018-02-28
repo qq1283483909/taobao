@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>淘宝网 - 掏 ! 我喜欢</title><link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/amove.js"></script>
+		<script src="js/yunsu.js"></script>
+		<script src="js/move.js" ></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var taobaologol =document.querySelector(".taobaologol");
+				var a1 = document.getElementsByTagName("a")[1];
+				var denglujiemian =document.querySelector(".denglujiemian");
+				var denglujiemian2 =document.querySelector(".denglujiemian2");
+				var box2 = document.getElementById("box2");
+				var box2img = box2.getElementsByTagName("img")[0];
+				var box3 = document.getElementById("box3");
+				var box3img = box3.getElementsByTagName("img")[0];
+				var box4 = document.getElementById("box4");
+				var box4img = document.querySelector(".box4img");
+				var box4img1 = box4img.getElementsByTagName("img")[0];
+				var oimg = document.getElementById("oimg");
+				var b1 = document.querySelector(".b1");
+				var box6 = document.getElementById("box6");
+				var span1 = box6.getElementsByTagName("span")[0];
+				var down = document.querySelector(".down");
+				var shuaxin = document.querySelector(".shuaxin");
+				var btn1 = shuaxin.getElementsByTagName("button")[0];
+				var yonghuming = document.getElementById("yonghuming");
+				var mima = document.getElementById("mima");
+				a1.onmouseover=function(){
+					a1.style.color="orange"
+					a1.onmouseout=function(){
+						a1.style.color="burlywood"
+					}
+				}
+//				obj,attr,target,sd,s,fn
+				box4.onmouseover=function(){
+					console.log("0")
+					yunsu(box4img,"left",-80,-20,100,function(){
+//					var b4left =parseInt(box4img1.style.left); 
+//					if (b4left==-80) {
+//						oimg.style.display="block"
+//					}
+					oimg.style.display="block"
+					move(oimg,"opacity",1,100,function(){});
+				});
+				box4.onmouseout=function(){
+//					if (box4.onmouseover=function(){}) {
+//						oimg.style.display="block"
+//					}
+//					if (oimg.onmouseover=function(){}) {
+//						oimg.style.display="block"
+//					}
+					console.log("1")
+					yunsu(box4img,"left",0,20,100,function(){
+					move(oimg,"opacity",0,10,function(){
+						oimg.style.display="none"
+					});
+					});
+				}
+				}
+				document.onblur=function(){
+					console.log("100");
+					move(box4img,"opacity",0.3,100,function(){
+					console.log("10");
+					if(box4img1.style.opacity==0.3){
+						shuaxin.style.display="block";
+						box4.style.display="none"
+						btn1.onclink=function(){
+							box4.style.display="block"
+							box4img1.style.opacity=1;
+							shuaxin.style.display="none";
+						}
+					}
+				});
+				}
+				
+//				function amove(ca2){}
+//				function amove(ca3){}
+//				function amove(ca4){}
+//				function amove(ca5){}
+//				function amove(ca6){}
+//				box2.onmouseover=function(){
+//					box2.innerHTML="<img src="+"img/qianselogo.png"+"/>";
+//					console.log("a")
+//				}
+				box2.onmouseover =function(){
+					box2img.src="img/qianselogo.png";
+				}
+				box2.onmouseout=function(){
+//					box2.innerHTML="<img src="+"img/shenselogo.jpg"+"/>";
+					box2img.src="img/shenselogo.png";
+				}
+				box2.onclick=function(){
+					denglujiemian2.style.display="none";
+					denglujiemian.style.display="block";
+					console.log("1")
+				}
+				span1.onclick=function(){
+					denglujiemian2.style.display="none";
+					denglujiemian.style.display="block";
+					console.log("1")
+				}
+				span1.onmouseover=function(){
+					span1.style.color="red"
+					span1.onmouseout=function(){
+						span1.style.color="#999"
+					}
+				}
+				box3.onmouseover =function(){
+					console.log("a")
+					box3img.src="img/qianselogo2.jpg";
+				}
+				box3.onmouseout=function(){
+					console.log("b")
+//					box2.innerHTML="<img src="+"img/shenselogo.jpg"+"/>";
+					box3img.src="img/shenselogo2.jpg";
+				}
+				box3.onclick=function(){
+					console.log("1")
+					denglujiemian.style.display="none"
+					denglujiemian2.style.display="block"
+				}
+				b1.onmouseover=function(){
+					b1.style.backgroundColor="red";
+				}
+				b1.onmouseout=function(){
+					b1.style.backgroundColor="#ff4400";
+				}
+				b1.onclick=function(){
+					var x = getCookie("x");
+					var y = getCookie("y");
+					var b = getCookie("b");
+					if (yonghuming.value==x&&mima.value==y){
+						console.log("a")
+						setCookie("b",yonghuming.value);
+						location.href="index.html";
+					}if (yonghuming.value==b&&mima.value==y) {
+						setCookie("b",yonghuming.value);
+						location.href="index.html";
+					}else{
+						alert("用户名或密码错误");
+						yonghuming.value="";
+						mima.value="";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="jiemian">
+			<div class="top">
+				<div class="taobaologo">
+					<a href="index.html">
+						<img src="img/taobaologo1.jpg"/>
+					</a>
+				</div>
+				<div class="taobaologow">
+					<p style="text-align: center;">为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！</p>
+				</div>
+				<div class="taobaologol">
+					<a href="#">
+						<img src="img/taobaologo2.jpg"/>
+						"登陆界面"改进建议
+					</a>
+				</div>
+			</div>
+			<div class="center">
+				 <a href="#">
+				 	<img src="img/taobaologo3.jpg"/>
+				 </a>
+				 <div class="denglujiemian2">
+				 	<div class="box1">
+				 		<img src="img/box1logo.jpg"/>
+				 		密码登录在这里
+				 	</div>
+				 	<div id="box2">
+				 		<img src="img/shenselogo.png"/>
+				 	</div>
+				 	<div class="biaozhunkuang">
+				 		<p class="p1">
+				 			手机扫码,安全登录
+				 		</p>
+				 		<div id= "box4">
+				 			<div class="box4img">
+				 				<img src="img/erweima.jpg"/>
+				 			</div>
+				 			<img id="oimg" src="img/erweimalogo2.jpg"/>
+				 		</div>
+				 		<div class="shuaxin">
+				 			<div shuacen>
+				 				<p>二维码已失效</p>
+				 				<button>请点击刷新</button>
+				 			</div>
+				 		</div>
+				 		<div class="box5">
+				 			<img src="img/erweimalogo.jpg"/> 
+				 			<span>打开<a href="#">
+				 				手机淘宝
+				 				</a>
+				 				<a href="#">
+				 					手机天猫
+				 				</a>
+				 				扫一扫登录
+				 			</span>
+				 		</div>
+				 		<div id="box6">
+				 			<span>
+				 				密码登录
+				 			</span>
+				 			<a href="注册页面.html">
+				 				免费注册
+				 			</a>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="denglujiemian">
+				 	<div class="box1">
+				 		<img src="img/box1logo.jpg"/>
+				 		扫码登录更安全
+				 	</div>
+				 	<div id="box3">
+				 		<img src="img/shenselogo2.jpg"/>
+				 	</div>
+				 	<div class="biaozhunkuang">
+				 		<p class="p1">
+				 			密码登录
+				 		</p>
+				 		<div class="kuang1">
+				 			<input id="yonghuming" type="text" placeholder="会员名/邮箱/手机号" />
+				 		</div>
+				 		<div class="kuang2">
+				 			<input id="mima" type="password"/>
+				 		</div>
+				 		<button  class="b1">登录</button>
+				 		<div class="a1">
+				 			<a href="#">
+				 				<img src="img/weibologo.jpg"/>
+				 				微博登录
+				 			</a>
+				 			<a href="#">
+				 				<img src="img/zhifubaologo.jpg"/>
+				 				支付宝登录
+				 			</a>
+				 		</div>
+				 		<div class="a2">
+				 			<a href="#">
+				 				忘记密码
+				 			</a>
+				 			<a href="#">
+				 				忘记会员名
+				 			</a>
+				 			<a href="注册页面.html">
+				 				免费注册
+				 			</a>
+				 		</div>
+				 	</div>
+				 </div>
+			</div>
+			<div class="down">
+				<ul class="u1">
+					<li><a href="#">阿里巴巴集团</a></li>
+					<li><a href="#">阿里巴巴国际站</a></li>
+					<li><a href="#">阿里巴巴中国站</a></li>
+					<li><a href="#">全球速卖通</a></li>
+					<li><a href="#">淘宝网</a></li>
+					<li><a href="#">天猫</a></li>
+					<li><a href="#">聚划算</a></li>
+					<li><a href="#">一淘</a></li>
+					<li><a href="#">阿里妈妈</a></li>
+					<li><a href="#">飞猪</a></li>
+					<li><a href="#">虾米</a></li>
+					<li><a href="#">阿里云计算</a></li>
+					<li><a href="#">云OS</a></li>
+					<li><a href="#">万网</a></li>
+					<li><a href="#">支付宝</a></li>
+					<li ><a href="#" id="a3">来往</a></li>
+				</ul>
+				<ul class="u2">
+					<li><a href="#">关于淘宝</a></li>
+					<li><a href="#">合作伙伴</a></li>
+					<li><a href="#">营销中心</a></li>
+					<li><a href="#">廉政举报</a></li>
+					<li><a href="#">练习客服</a></li>
+					<li><a href="#">开放平台</a></li>
+					<li><a href="#">诚征英才</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">网站地图</a></li>
+					<li><a href="#">法律声明及隐私权政策</a></li>
+					<span>&copy; 2017 Taobao.com版权所有</span>
+				</ul>
+				<div class="last"><span>网络文化经营许可证：</span><a href="#">文网文[2010]040号</a>&nbsp;&nbsp;&nbsp;<span>增值电信业务经营许可证：浙B2-20080224-1</span><span>信息网络传播视听节目许可证：1109364号</span></div>
+			</div>
+		</div>
+	</body>
+</html>
